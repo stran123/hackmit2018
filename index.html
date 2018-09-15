@@ -1,4 +1,56 @@
 <html>
-    <h1><center>The</center></h1>
-    <li><a href="index.html#blog" class="button primary logo ">Back to Blog</a></li>
+<style>
+		body {
+    background-color: darkseagreen;
+}
+
+h1 {
+    font-family: verdana;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+.button {
+    font-family: verdana;
+    background-color: mediumaquamarine;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<h1><center>ERNSPERERTERN</center></h1>
+
+<body>
+    <div id="container " style="text-align: center">
+        <h1 class="text">YER ERNSPERERTERNERL QERT:</h1>
+        <img src="https://i.ytimg.com/vi/-p3lKBJ-kA4/maxresdefault.jpg" width="640" height="360" />
+        <p id="quote" align="center"></p>
+        <p id="quote2" align="center"></p>
+        <script>
+        function quoteGen () {
+            var quotes = ['"Success is most often achieved by those who don\'t know that failure is inevitable." -- Coco Chanel', '"Things work out best for those who make the best of how things work out." -- John Wooden','"There is more to life than increasing its speed." -- Mahatma Gandhi','"The world is your exercise-book, the pages on which you do your sums. It is not reality, although you can express reality there if you wish. You are also free to write nonsense, or lies, or to tear the pages." -- Messiah\'s Handbook : Reminders for the Advanced Soul','"Standards are different for all things, so the standard set by man is by no means the only \'certain\' standard. If you mistake what is relative for something certain, you have strayed far from the ultimate truth." -- Chuang Tzu','"If you fool around with something long enough, it will eventually break." -- Anonymous','"A dream will always triumph over reality, once it is given the chance." -- Stanislaw Lem','"Each man is his own prisoner, in solitary confinement for life." -- Anonymous','"Whatever you do will be insignificant, but it is very important that you do it." -- Gandhi','"If a man has a strong faith he can indulge in the luxury of skepticism." -- Friedrich Nietzsche','"Due to circumstances beyond your control, you are master of your fate and captain of your soul." -- Anonymous',
+                            '"If you have to hate, hate gently." -- Anonymous','"One meets his destiny often on the road he takes to avoid it." -- Anonymous','"God is the tangential point between zero and infinity." -- Alfred Jarry','"You must be the change you wish to see in the world." --Mahatma Gandhi','"Nasrudin was carrying home a piece of liver and the recipe for liver pie. Suddenly a bird of prey swooped down and snatched the piece of meat from his hand. As the bird flew off, Nasrudin called after it, \"Foolish bird! You have the liver, but what can you do with it without the recipe?\" -- Anonymous','"In dwelling, be close to the land. In meditation, delve deep into the heart. In dealing with others, be gentle and kind. In speech, be true. In work, be competent. In action, be careful of your timing." -- Lao Tsu','"I have a simple philosophy: Fill what\'s empty. Empty what\'s full. Scratch where it itches." -- A. R. Longworth','"There are no accidents whatsoever in the universe." -- Baba Ram Dass','"A sad spectacle. If they be inhabited, what a scope for misery and folly. If they be not inhabited, what a waste of space." -- Thomas Carlyle, looking at the stars','"...everything on this earth has a purpose, every disease an herb to cure it, and every person a mission. This is the Indian theory of existence." Mourning Dove, (Salish 1888-1936)','"During the voyage of life, remember to keep an eye out for a fair wind; batten down during a storm; hail all passing ships; and fly your colors proudly." -- Anonymous'];
+            var quotesEng = ['"SERCERS ERS MAHST ERFTERN ERCHERVERD BER THERS WH DERNT KNER THERT FERLER ERS ERNERVERTERBL." -- CERC CHERNERL','"THINS WERK ERT BERST FER THERS WH MAHK DA BERST ERF HER THINS WERK ERT." -- JERN WERDERN','"THER ERS MAHR TER LERF THERN ERNCRERSIN ERTS SPERD." -- MAHERTM GERNDH','"DA WERLD ERS YER ERXERCERSERBERK, DA PERGERS ERN WHERCH U DER YER SERMS. ERT ERS NERT RERLERTER, ERLTHERGH U CERN ERXPRERS RERLERTER THER ERF U WERSH. U ER ERLS FRER TER WRERT NERNSERNS, ER LERS, ER TER TER DA PERGERS." -- MAHSERS HERNDBERK : RERMAHNDERS FER DA ERDVERNCERD SERL','"STERNDERDS ER DERFERERNT FER ERL THINS, SER DA STERNDERD SERT BER MAHN ERS BER NER MAHNS DA ERNLER \'CERTERN\' STERNDERD. ERF U MAHSTERK WHERT ERS RERLERTERV FER SERMAHTHIN CERTERN, U HERV STRERD FER FRERM DA ERLTERMAHT TRERTH." -- CHIN TZ ','"ERF U FERL ERERND WERTH SERMAHTHIN LERNG ERNERGH, ERT WERL ERVERNTERLER BRERK." -- ERNERNERMAHS','"A DRERM WERL ERLWERS TRERMPH ERVER RERLERTER, ERNC ERT ERS GERVERN DA CHERNC."" -- STERNERSLERW LERM','"ERCH MAHN ERS HERS ERN PRERSERNER, ERN SERLERTERER CERNFERNERMAHNT FER LERF." -- ERNERNERMAHS','"WHERTERVER U DER WERL BER ERNSERGNERFERCERNT, BERT ERT ERS VERER ERMPERTERNT THERT U DER ERT." -- GERNDH','"ERF A MAHN HERS A STRIN FERTH HER CERN ERNDERLG ERN DA LERXERER ERF SKERPTERCERSM." -- FRERDRERCH NERTZSCH','DER TER CERCERMSTERNCERS BERND YER CERNTRERL, U ER MAHSTER ERF YER FERT ERND CERPTERN ERF YER SERL." -- ERNERNERMAHS',
+                            '"ERF U HERV TER HERT, HERT GERNTLER." -- ERNERNERMAHS','"ERN MAHTS HERS DERSTERNER ERFTERN ERN DA RERD HER TERKS TER ERVERD ERT." -- ERNERNERMAHS','"GERD ERS DA TINERNTERL PERNT BERTWERN ZER ERND ERNFERNERTER." -- ERLFRERD JERER','"U MAHST BER DA CHIN U WERSH TER SER ERN DA WERLD." --MAHERTM GERNDH','"NERSRERDERN WERS CERIN HERM A PERC ERF LERVER ERND DA RERCERP FER LERVER PER. SERDERNLER A BERD ERF PRER SWERPED DERN ERND SNERTCHERD DA PERC ERF MAHT FRERM HERS HERND. ERS DA BERD FLERW ERF, NERSRERDERN CERLERD ERFTER ERT, "FERLERSH BERD! U HERV DA LERVER, BERT WHERT CERN U DER WERTH ERT WERTHERT DA RERCERP?" -- ERNERNERMAHS','"ERN DWERLIN, BER CLERS TER DA LERND. ERN MAHDERTERTERN, DERLV DERP ERNT DA HERT. ERN DERLIN WERTH ERTHERS, BER GERNTL ERND KERND. ERN SPERCH, BER TRER. ERN WERK, BER CERMPERTERNT. ERN ERCTERN, BER CERERFERL ERF YER TERMAHNG." -- LER TS','"I HERV A SERMPL PHERLERSERPHER: FERL WHERTS ERMPTER. ERMPTER WHERTS FERL. SCRERTCH WHER ERT ERTCHERS." -- A. R. LINWERTH','"THER ER NER ERCERDERNTS WHERTSERVER ERN DA ERNERVERS." -- BERB RERM DERS','"A SERD SPERCTERCL. ERF DEY BER ERNHERBERTERD, WHERT A SCERP FER MAHSERER ERND FERLER. ERF DEY BER NERT ERNHERBERTERD, WHERT A WERST ERF SPERC." -- THERMAHS CERLERL, LERKIN ERT DA STERS','"...ERVERERTHIN ERN THERS ERTH HERS A PERPERS, ERVERER DERSERS ERN HERB TER CER ERT, ERND ERVERER PERSERN A MAHSERN. THERS ERS DA ERNDERN THERER ERF ERXERSTERNC." MAHRNIN DERV, (SERLERSH 181936)','"DERIN DA VERG ERF LERF, RERMERMBER TER KERP ERN ER ERT FER A FER WERND; BERTERN DERN DERIN A STERM; HERL ERL PERSIN SHERPS; ERND FLER YER CERLERS PRERDLER." -- ERNERNERMAHS'];
+            var quoteNum = Math.floor(Math.random() * 22);
+            document.getElementById("quote").innerHTML = quotes[quoteNum];
+            document.getElementById("quote2").innerHTML = quotesEng[quoteNum];
+        }
+        </script>
+        <centering>
+                <button id="button" onclick="quoteGen()">Click for a Quote</button>
+        </centering>
+    </div>
+  </body>
+
 </html>
